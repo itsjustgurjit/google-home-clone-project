@@ -1,22 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>google clone</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <style>
+    .nav-profile-img{
+        height: 35px;
+        width: 35px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li {
+        cursor: pointer;
+    }
+    .form-control:focus {
+     box-shadow: none;
+     background: gray;
+    }
+    .ifbg:hover{
+        background-color: rgb(57, 57, 57);
+    }
+    button{
+        background:rgb(60, 60, 60) !important;
+        border: none !important;
+    }
+    button:hover{
+        background: rgb(73, 73, 73) !important;
+        outline: 1px solid gray !important;
+    }
+    .langages-container a{
+        text-decoration: none;
+    }
+    .footer-dark a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+  <body>
     <!-- <input type="text">
     <button>search</button> -->
+<nav class="container-fluid mt-3">
+    <ul class="d-flex justify-content-end gap-3 align-items-center list-unstyled text-light">
+        <li>
+            <a class="small" href="https://mail.google.com/mail/">Gmail</a>
+        </li>
+        <li>
+            <a class="small" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+        </li>
+        <li>
+            <a  href="https://labs.google.com/search?source=hp"><i class="bi bi-rocket-takeoff-fill"></i></a>
+        </li>
+        <li><a><i class="bi bi-grid-fill"></i></li>
+        <li><a><img class="nav-profile-img rounded-circle" src="https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a></li>
+    </ul>
+</nav>
+<!-- logo and search -->
+ <div class="container mt-5">
+    <h1 style="font-size: 5.5rem;" class="text-center mt-5">Google</h1>
+    <div style="max-width: 650px;" class="container ifbg input-group mb-3 mt-5 border rounded-5">
+        <span style="background: none;border: none;" class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+        <input autofocus style="background: none;border: none;" type="text" id="input-srh" class="p-3 form-control" placeholder="Search Google or type a URL" aria-label="Username" aria-describedby="basic-addon1">
+        <span style="background: none;border: none;" class="input-group-text" id="basic-addon1"><i class="bi bi-mic-fill"></i></span>
+        <span style="background: none;border: none;" class="input-group-text fs-5" id="basic-addon1"><i class="bi bi-camera-fill"></i></span>
+      </div>
+      <div class="btn-toolbar d-flex justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-secondary search-btn">Google Search</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-secondary search-btn">I m feeling lucky</button>
+        </div>
+      </div>
+      <div class="container d-flex pt-4 langages-container gap-2 justify-content-center">
+        <p>Google offered in:</p>
+        <a href="#">Hindi</a>
+        <a href="#">Punjabi</a>
+        <a href="#">Bengali</a>
+        <a href="#">Gujrati</a>
+        <a href="#">Marathi</a>
+      </div>
+ </div>
+ <div class="bg-dark px-4 pt-2  pb-2 footer-dark position-fixed bottom-0 p-1" style="background-color: rgb(26, 26, 26) !important;width: 100%;">
+    <div class="">India</div>
+    <hr class="my-2">
+    <div class="d-flex justify-content-between">
+        <div class="link-group-1 d-flex gap-3 small"><a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            </div>
+        <div class="link-group-1 d-flex gap-3 mb-1 small">
+            <a href="#">Privacy</a>
+        <a href="#">Terms</a> 
+        <a href="#">Settings</a> 
+        
+        </div>
+        
+    </div>
+ </div>
 
 
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="search-engine-clone.js"></script>
-</body>
+  </body>
 </html>
